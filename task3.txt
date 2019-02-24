@@ -1,0 +1,5 @@
+3. Что делает этот sql-запрос? Объясните по-русски
+
+select count(*) from users inner join orders on users.id=orders.id_user where users.age<19
+
+Ответ: находим количество пользователей, у которых есть заказы и возраст которых меньше 19.

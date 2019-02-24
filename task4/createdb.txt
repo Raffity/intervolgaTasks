@@ -1,0 +1,1 @@
+CREATE TABLE `intervolga`.`country` ( `id` INT NOT NULL AUTO_INCREMENT , `name` TEXT NOT NULL , `capital` TEXT NOT NULL , `population` INT NOT NULL , `area` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
