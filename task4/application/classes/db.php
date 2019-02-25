@@ -31,7 +31,8 @@ class Db
 			$_POST['message'] = "Заполните все поля.";
 			return false;
 		}
-		if(!is_numeric($params['population']) && !is_numeric($params['area']))
+		if(!is_numeric($params['population']) || !is_numeric($params['area']) ||
+			$params['population'] < 1 || $params['area'] < 1)
 		{
 			$_POST['message'] = "Число жителей и площадь страны должны быть целыми числами.";
 			return false;
